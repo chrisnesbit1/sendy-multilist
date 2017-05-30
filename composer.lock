@@ -1,0 +1,80 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bb3414aba23f1d21cbffc2a538997833",
+    "packages": [
+        {
+            "name": "bainternet/My-Meta-Box",
+            "version": "master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        },
+        {
+            "name": "jacobbennett/sendyphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JacobBennett/SendyPHP.git",
+                "reference": "42deb7d8a2ee9b81715d4f1e728b114671c4111e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JacobBennett/SendyPHP/zipball/42deb7d8a2ee9b81715d4f1e728b114671c4111e",
+                "reference": "42deb7d8a2ee9b81715d4f1e728b114671c4111e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SendyPHP\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "email": "me@jakebennett.net",
+                    "name": "Jacob Bennett",
+                    "homepage": "http://jakebennett.net"
+                }
+            ],
+            "description": "A PHP Library for interfacing with the Sendy newsletter system (http://sendy.co)",
+            "keywords": [
+                "newsletter",
+                "sendy"
+            ],
+            "support": {
+                "source": "https://github.com/JacobBennett/SendyPHP/tree/master",
+                "issues": "https://github.com/JacobBennett/SendyPHP/issues"
+            },
+            "time": "2017-04-17 15:06:46"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "jacobbennett/sendyphp": 20,
+        "bainternet/my-meta-box": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

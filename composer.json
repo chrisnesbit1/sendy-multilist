@@ -1,0 +1,27 @@
+{
+"name": "chrisnesbit1/sendy-multilist",
+"description": "chrisnesbit1/sendy-multilist",
+"require": {
+	"JacobBennett/SendyPHP": "dev-master",
+	"bainternet/My-Meta-Box": "dev-master"
+},
+"repositories": [
+    {
+        "type": "vcs",
+        "name": "jacobbennett/sendyphp",
+        "description": "JacobBennett/SendyPHP",
+    		"url": "https://github.com/JacobBennett/SendyPHP"
+    },
+    {
+            "type": "package",
+            "package": {
+                "name": "bainternet/My-Meta-Box",
+                "version": "master",
+                "dist": {
+                    "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+		}
+]
+}
