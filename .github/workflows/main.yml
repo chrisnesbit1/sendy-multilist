@@ -1,0 +1,23 @@
+name: WordPress Org Deploy
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: WordPress Org Deploy
+        uses: varunsridharan/action-wp-org-deploy@1.0
+        with:
+          WORDPRESS_USERNAME: cnesbit
+          WORDPRESS_PASSWORD: !!Amber35!!@!
+          IGNORE_FILE: .wporgignore
+          ASSETS_DIR: .wordpress-org
