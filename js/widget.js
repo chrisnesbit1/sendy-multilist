@@ -55,12 +55,15 @@
 					// this sets up our notification area for error / success messages
 					$("#sendy-note").ajaxComplete(function(event, request, settings)
 					{
-						var msg = response.responseText.substr(0, response.responseText.length - 4); //mysterious "null" at end of response
-				    console.log(msg);
+						var msg = response.responseText;
+						if (msg.substr(0, 4) == "null") {
+							msg = msg.substr(0, msg.length - 4); //mysterious "null" at end of response
+						}
+                        
 						if(msg+"" == "1" || msg.toLowerCase() == "subscribed")
 						{
-							statusMessage("Thank you for subscribing! A confirmation email has been sent to you - be sure to click the confirmation link.");
-							//theform.hide();
+							statusMessage("<br/>Thank you for subscribing! A confirmation email has been sent to you - be sure to click the confirmation link.");
+							theform.hide();
 						}
 						else
 						{

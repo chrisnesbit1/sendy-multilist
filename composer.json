@@ -1,18 +1,16 @@
 {
-"name": "chrisnesbit1/sendy-multilist",
-"description": "chrisnesbit1/sendy-multilist",
-"require": {
-	"JacobBennett/SendyPHP": "dev-master",
-	"bainternet/My-Meta-Box": "dev-master"
-},
-"repositories": [
-    {
-        "type": "vcs",
-        "name": "jacobbennett/sendyphp",
-        "description": "JacobBennett/SendyPHP",
-    		"url": "https://github.com/JacobBennett/SendyPHP"
+    "name": "chrisnesbit1/sendy-multilist",
+    "description": "chrisnesbit1/sendy-multilist",
+    "require": {
+        "chrisnesbit1/WPSendyPHP": "dev-master",
+        "bainternet/My-Meta-Box": "dev-master"
     },
-    {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/chrisnesbit1/WPSendyPHP"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "bainternet/My-Meta-Box",
@@ -22,6 +20,6 @@
                     "type": "zip"
                 }
             }
-		}
-]
+        }
+    ]
 }
