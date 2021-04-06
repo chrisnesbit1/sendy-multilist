@@ -1,90 +1,111 @@
-=== Sendy Multilist ===
-
-Contributors: cnesbit
-Donate link: https://wplikeapro.com/
-Tags: widget, subscribe, sendy
-Requires at least: 4.7.1
-Tested up to: 4.7.1
-Stable tag: trunk
+=== Multilist Subscribe for Sendy ===
+Contributors: cnesbit, freemius
+Tags: Sendy, subscribe, widget, email list, multilist, email marketing, SES, SMTP, post notification
+Donate link: https://chrisanesbit.com/multilist-subscribe-for-sendy/
+Requires at least: 5.5
+Tested up to: 5.7
+Requires PHP: 5.4
+Stable tag: 1.5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Sendy Multilist adds a subscribe widget, for one or more Sendy lists, to your WordPress website.
+Multilist Subscribe for Sendy adds a subscribe widget to your WordPress website so you can send post notifications to all your Sendy.co mailing lists.
 
 == Description ==
+Multilist Subscribe for Sendy integrates WordPress post notifications into one or more of your Sendy email marketing campaigns. Setup is easy and Sendy can leverage the power of Amazon's Simple Email Service (SES), or any SMTP relay service, for dependable email marketing.
 
-Sendy.co is a great email marketting system that is much more affordable than MailChimp or the like. There are some
-WordPress plugins that offer simple Subscriber widgets but they only add the subscriber to a single list. 
+= How to Use =
+1. Navigate to "Sendy Email Templates", then "Add New", to create a Sendy campaign template associated with a post type - Subscribers to this campaign will receive the campaign emails when a new post of that post type is published.
+1. Navigate to "Appearance", then "Widgets", and add a "Sendy Multilist" widget to your WordPress website - this is the subscribe form for the Sendy campaigns you created in the previous step.
 
-This plugin offers a widget which allows subscribers to be added to 1, or multiple, lists at once.
+= Campaign Body Shortcodes =
+"Multilist Subscribe, for Sendy" offers a variety of useful shortcode for the body of the campaign template's email message.
+
+**Shortcodes supported only by this plugin, not available to other areas of WordPress**
+[post_title] The title of the post you're publishing (this will be included as a hyperlink to your post)
+[post_content] The body of your post (WordPress shortcodes, within the post's content, are supported)
+[post_excerpt] The excerpt of your post (the entire post_content will be used if no excerpt can be determined. Additionally, WordPress shortcodes, within the post's excerpt, are supported)
+[read_more] The words "read more" will be included as a link to your post
+[post_url] Just the actual link to your post. Great for use with your own buttons!
+[featured_image] the post's featured image will be displayed in the template
+[featured_image_url] Just the actual link to the featured image. This can be handy if you need special formatting in the email campaign template.
+
+**Sendy.co Shortcodes (Provided by [Sendy.co](https://sendy.co), and only available to Sendy)**
+[Name,fallback=] *This shortcode injects the subscribers name, or a fallback phrase that you specify if no name exists
+[Email] *The subscriber's email will be included as a link to open a new email to the reader
+[webversion] *A link to the web version of the email, to be viewed in a browser
+[unsubscribe] *A link the subscriber can use to unsubscribe from your email list
+
+WordPress shortcodes are also supported in the Email Message Body.
 
 == Installation ==
+1. Upload "sendy-multilist.zip" to the "/wp-content/plugins/" directory.
+1. Activate the plugin through the "Plugins" menu in WordPress.
+1. Navigate to "Sendy Email Templates", then "Add New", to create a Sendy campaign template associated with a post type - Subscribers to this campaign will receive the campaign emails when a new post of that post type is published.
+1. Navigate to "Appearance", then "Widgets", and add a "Sendy Multilist" widget to your WordPress website - this is the subscribe form for the Sendy campaigns you created in the previous step.
 
-
-1. Upload `sendy-multilist` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
 == Frequently Asked Questions ==
+= Does this plugin include Sendy? =
+No. Sendy is a separate product created by Sendy.co. You can purchase your own license for the self-hosted installation from Sendy.co and set it up yourself.
 
-= A question that someone might have =
+= Why aren't my post notifications being sent =
+1. Make sure you copy/paste'd your List ID, API Key, etc.. exactly correct.
+1. Make sure your Sendy Campaign Template is "Published" and the status is "Active".
+1. Check your Permalink Settings (Go to "Settings" > "Permalink") and make sure that "index.php" is not part of your "Common Setting".
+1. If everything looks right, but the post notifications are still not being sent, open a support ticket in the plugin's WordPress directory page.
 
-An answer to that question.
+= Where do I find my API Key? =
+Login to your Sendy account and click your account name (in the top right corner), then click "Settings".
+Your API Key will be on the right-hand side of your Settings page. Copy that key and paste it into the "Sendy API Key" field, in your "Sendy Multilist" Widget.
 
-= What about foo bar? =
+= Where do I find my List ID? =
+1. Login to your Sendy account and click "View All Lists" in the gray box located on the left. (If you have multiple "Brands" in your Sendy account, you must select a brand first).
+1. When viewing the "Subscriber Lists" page, in Sendy, the "ID" Column contains the list IDs. Hover over the ID for the list you want to add to WordPress to select it, then use your keyboard to copy that value (Control + C on Windows, Command + C on Mac). Paste that value into the "List ID" field in your Sendy Campaign Template, in WordPress
 
-Answer to foo bar dilemma.
 
 == Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
+1. Subscriber widget for multiple Sendy lists
+2. List view, of Sendy Campaign Templates
+3. Add/Edit a Sendy Campaign Template
 
 == Changelog ==
+# 1.5.9
+* add now-required option to route registration
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+# 1.5.8
+* update WordPress version tested up to
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+# 1.5.7
+* update Freemius library
+
+# 1.5.5
+* fix versioning issue
+
+# 1.5.4
+* bugfix
+
+# 1.5.3
+* replaced PHP curl with standard WordPress code
+* updated Subscribe call to include the API call
+
+# 1.5.2
+* minor bugfix
+
+# 1.5.1
+* added the [post_url], [featured_image], and [featured_image_url] shortcodes, for use in the body of the campaign template
+
+# 1.5.0
+* More informative list page for  Sendy Campaign Templates
+* Ability to set a Sendy Campaign Template as Active or Inactive
+* Only send a campaign the first time a post is published
+* Ability to use shortcodes in the body of the campaign email
+
+# 1.0.1 
+* Minor changes to simplify code and update readme.
+
+# 0.1 
+* Initial release.
 
 == Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+* add now-required option to route registration

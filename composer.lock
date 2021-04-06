@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb3414aba23f1d21cbffc2a538997833",
+    "content-hash": "cf4d034ea23a14d0115c6b02010be830",
     "packages": [
         {
             "name": "bainternet/My-Meta-Box",
@@ -18,17 +18,17 @@
             "type": "library"
         },
         {
-            "name": "jacobbennett/sendyphp",
+            "name": "chrisnesbit1/wpsendyphp",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/JacobBennett/SendyPHP.git",
-                "reference": "42deb7d8a2ee9b81715d4f1e728b114671c4111e"
+                "url": "https://github.com/chrisnesbit1/WPSendyPHP.git",
+                "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JacobBennett/SendyPHP/zipball/42deb7d8a2ee9b81715d4f1e728b114671c4111e",
-                "reference": "42deb7d8a2ee9b81715d4f1e728b114671c4111e",
+                "url": "https://api.github.com/repos/chrisnesbit1/WPSendyPHP/zipball/f3f0987d31603d999913be2a2297f508b1f7ad55",
+                "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SendyPHP\\": "src/"
+                    "WPSendyPHP\\": "src/"
                 }
             },
             "license": [
@@ -49,9 +49,9 @@
             ],
             "authors": [
                 {
-                    "email": "me@jakebennett.net",
-                    "name": "Jacob Bennett",
-                    "homepage": "http://jakebennett.net"
+                    "email": "chris@chrisanesbit.com",
+                    "name": "Chris Nesbit",
+                    "homepage": "https://chrisanesbit.com"
                 }
             ],
             "description": "A PHP Library for interfacing with the Sendy newsletter system (http://sendy.co)",
@@ -60,17 +60,16 @@
                 "sendy"
             ],
             "support": {
-                "source": "https://github.com/JacobBennett/SendyPHP/tree/master",
-                "issues": "https://github.com/JacobBennett/SendyPHP/issues"
+                "source": "https://github.com/chrisnesbit1/WPSendyPHP/tree/master"
             },
-            "time": "2017-04-17 15:06:46"
+            "time": "2020-01-06T03:31:07+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "jacobbennett/sendyphp": 20,
+        "chrisnesbit1/wpsendyphp": 20,
         "bainternet/my-meta-box": 20
     },
     "prefer-stable": false,
