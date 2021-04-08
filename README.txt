@@ -5,7 +5,7 @@ Donate link: https://chrisanesbit.com/multilist-subscribe-for-sendy/
 Requires at least: 5.5
 Tested up to: 5.7
 Requires PHP: 5.4
-Stable tag: 1.5.9
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ Your API Key will be on the right-hand side of your Settings page. Copy that key
 3. Add/Edit a Sendy Campaign Template
 
 == Changelog ==
+# 1.6.0
+* add vendor code that went missing
+
 # 1.5.9
 * add now-required option to route registration
 

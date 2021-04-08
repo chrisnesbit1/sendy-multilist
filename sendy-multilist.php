@@ -14,7 +14,7 @@
  * Plugin Name:       Multilist Subscribe, for Sendy
  * Plugin URI:        https://chrisanesbit.com/multilist-subscribe-for-sendy
  * Description:       Multilist Subscribe, for Sendy adds a subscribe widget and campaign templates, for one or more Sendy lists, to your WordPress website.
- * Version:           1.5.9
+ * Version:           1.6.0
  * Author:            Chris Nesbit
  * Author URI:        https://chrisanesbit.com
  * Text Domain:       sendy-multilist
