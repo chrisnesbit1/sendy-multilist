@@ -70,6 +70,10 @@ Your API Key will be on the right-hand side of your Settings page. Copy that key
 3. Add/Edit a Sendy Campaign Template
 
 == Changelog ==
+# 1.6.1
+* fix bug caused when editting a page/post in WordPress admin
+* fix reference vendor library
+
 # 1.6.0
 * add vendor code that went missing
 
