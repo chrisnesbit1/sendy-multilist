@@ -2,8 +2,8 @@
     "name": "chrisnesbit1/sendy-multilist",
     "description": "chrisnesbit1/sendy-multilist",
     "require": {
-        "chrisnesbit1/WPSendyPHP": "dev-master",
-        "bainternet/My-Meta-Box": "dev-master"
+        "bainternet/My-Meta-Box": "dev-master",
+        "chrisnesbit1/wpsendyphp": "dev-master"
     },
     "repositories": [
         {
