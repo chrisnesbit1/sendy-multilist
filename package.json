@@ -1,6 +1,6 @@
 {
   "name": "multilist-subscribe-for-sendy",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Multilist Subscribe for Sendy integrates WordPress post notifications into one or more of your Sendy email marketing campaigns",
   "main": "sendy-multilist.php",
   "directories": {

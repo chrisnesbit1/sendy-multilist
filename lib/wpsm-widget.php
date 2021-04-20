@@ -37,9 +37,9 @@ class WPSM_Widget extends WP_Widget {
                 'callback' => array($this, 'subscribe'),
 				'permission_callback' => '__return_true',
 				'args' => array(
-						'name',
-						'email',
-						'list'
+					'name'=>[],
+					'email'=>[],
+					'list'=>[]
 				)
             ));
 		});

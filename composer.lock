@@ -4,16 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf4d034ea23a14d0115c6b02010be830",
+    "content-hash": "5f5d60b50a0740b65bd08abb58731529",
     "packages": [
         {
             "name": "bainternet/My-Meta-Box",
             "version": "master",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip"
             },
             "type": "library"
         },
@@ -23,12 +21,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnesbit1/WPSendyPHP.git",
-                "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55"
+                "reference": "ed18ef3da5010a4f02866e63f5966cfeb8238bd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnesbit1/WPSendyPHP/zipball/f3f0987d31603d999913be2a2297f508b1f7ad55",
-                "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55",
+                "url": "https://api.github.com/repos/chrisnesbit1/WPSendyPHP/zipball/ed18ef3da5010a4f02866e63f5966cfeb8238bd1",
+                "reference": "ed18ef3da5010a4f02866e63f5966cfeb8238bd1",
                 "shasum": ""
             },
             "require": {
@@ -62,18 +60,19 @@
             "support": {
                 "source": "https://github.com/chrisnesbit1/WPSendyPHP/tree/master"
             },
-            "time": "2020-01-06T03:31:07+00:00"
+            "time": "2021-04-08T12:52:45+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "chrisnesbit1/wpsendyphp": 20,
-        "bainternet/my-meta-box": 20
+        "bainternet/my-meta-box": 20,
+        "chrisnesbit1/wpsendyphp": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

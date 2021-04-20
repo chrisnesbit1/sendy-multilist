@@ -5,9 +5,7 @@
         "version_normalized": "9999999-dev",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip",
-            "reference": null,
-            "shasum": null
+            "url": "https://github.com/bainternet/My-Meta-Box/archive/master.zip"
         },
         "type": "library",
         "installation-source": "dist"
@@ -19,12 +17,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/chrisnesbit1/WPSendyPHP.git",
-            "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55"
+            "reference": "ed18ef3da5010a4f02866e63f5966cfeb8238bd1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/chrisnesbit1/WPSendyPHP/zipball/f3f0987d31603d999913be2a2297f508b1f7ad55",
-            "reference": "f3f0987d31603d999913be2a2297f508b1f7ad55",
+            "url": "https://api.github.com/repos/chrisnesbit1/WPSendyPHP/zipball/ed18ef3da5010a4f02866e63f5966cfeb8238bd1",
+            "reference": "ed18ef3da5010a4f02866e63f5966cfeb8238bd1",
             "shasum": ""
         },
         "require": {
@@ -34,7 +32,7 @@
             "phpunit/phpunit": "3.7.*",
             "squizlabs/php_codesniffer": "1.*"
         },
-        "time": "2020-01-06T03:31:07+00:00",
+        "time": "2021-04-08T12:52:45+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
